@@ -109,9 +109,9 @@ function displayTemperature(response) {
     background.style.backgroundColor = "#fbfbfb";
     background.style.backgroundRepeat = "no-repeat";
 
-    const element = document.querySelector(".form-control:focus");
-    element.style.outline = "5px solid rgba(94, 121, 219, 0.638)";
-    element.style.boxShadow = "none";
+    const search = document.querySelector(".form-control:focus");
+    search.style.outline = "5px solid rgba(94, 121, 219, 0.638)";
+    search.style.boxShadow = "none";
   } else {
     const background = document.querySelector(".card-body");
     background.style.background =
@@ -121,9 +121,9 @@ function displayTemperature(response) {
     background.style.backgroundColor = "#fbfbfb";
     background.style.backgroundRepeat = "no-repeat";
 
-    const element = document.querySelector(".form-control:focus");
-    element.style.outline = "5px solid #ffe96dcf";
-    element.style.boxShadow = "none";
+    const search = document.querySelector(".form-control:focus");
+    search.style.outline = "5px solid #ffe96dcf";
+    search.style.boxShadow = "none";
   }
 
   getForecast(response.data.coord);
