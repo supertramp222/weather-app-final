@@ -37,6 +37,10 @@ li:first-letter {
   text-transform: capitalize;
 }
 
+.weather-description {
+  text-transform: capitalize;
+}
+
 .container {
   margin-top: 40px;
   max-width: 600px;
