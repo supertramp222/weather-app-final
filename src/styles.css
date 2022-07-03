@@ -71,6 +71,7 @@ li:first-letter {
 
 .weather-description {
   margin: 22px 0 80px 0;
+  display: flex;
 }
 
 .weather-details {
@@ -81,8 +82,8 @@ li:first-letter {
 
 .weather-description h3 {
   position: relative;
-  top: 220%;
-  left: 5%;
+  top: 20%;
+  left: 15%;
 }
 
 .line {
