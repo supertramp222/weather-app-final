@@ -100,6 +100,32 @@ function displayTemperature(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
+  if (Math.round(response.data.main.temp) < 20) {
+    const background = document.querySelector(".card-body");
+    background.style.background =
+      "radial-gradient(circle at center, #87A0EA, #fbfbfb 60%)";
+
+    background.style.backgroundPosition = " 114px 50px";
+    background.style.backgroundColor = "#fbfbfb";
+    background.style.backgroundRepeat = "no-repeat";
+
+    const element = document.querySelector(".form-control:focus");
+    element.style.outline = "5px solid rgba(94, 121, 219, 0.638)";
+    element.style.boxShadow = "none";
+  } else {
+    const background = document.querySelector(".card-body");
+    background.style.background =
+      "radial-gradient(circle at center,   rgb(255, 248, 150) 0%, #fbfbfb 60%)";
+
+    background.style.backgroundPosition = " -114px -250px";
+    background.style.backgroundColor = "#fbfbfb";
+    background.style.backgroundRepeat = "no-repeat";
+
+    const element = document.querySelector(".form-control:focus");
+    element.style.outline = "5px solid #ffe96dcf";
+    element.style.boxShadow = "none";
+  }
+
   getForecast(response.data.coord);
 }
 
